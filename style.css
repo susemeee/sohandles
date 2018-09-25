@@ -11,7 +11,7 @@ html, body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .controls-row span {
@@ -35,15 +35,21 @@ input[name="api_key"] {
   flex: 1;
 }
 
-#list {
+#etc {
   width: 100vw;
-  height: 15vh;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#list {
   overflow: scroll;
   padding: 10px 0;
 }
 
 #controls {
   padding: 5px;
+  flex-grow: 0;
 }
 
 #list .list-item {
@@ -65,5 +71,5 @@ input[name="api_key"] {
 
 #map {
   width: 100vw;
-  height: 85vh;
+  height: 80vh;
 }

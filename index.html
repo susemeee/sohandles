@@ -10,27 +10,29 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div id="controls">
-    <div class="controls-row">
-      <span>API Key</span>
-      <input type="text" name="api_key" value="">
-      <span>s: </span>
-      <img src="./start.svg" alt="start">
-      <span>e: </span>
-      <img src="./end.svg" alt="end">
+  <div id="etc">
+    <div id="controls">
+      <div class="controls-row">
+        <span>API Key</span>
+        <input type="text" name="api_key" value="">
+        <span>s: </span>
+        <img src="./start.svg" alt="start">
+        <span>e: </span>
+        <img src="./end.svg" alt="end">
+      </div>
+      <div class="controls-row">
+        <input type="text" name="time_from">
+        <span>~</span>
+        <input type="text" name="time_to">
+      </div>
+      <!-- <button id="query">Query</button> -->
     </div>
-    <div class="controls-row">
-      <input type="text" name="time_from">
-      <span>~</span>
-      <input type="text" name="time_to">
-    </div>
-    <!-- <button id="query">Query</button> -->
-  </div>
-  <div id="list">
-    <div class="list-item _template">
-      <span class="from"></span>
-      <span>--&gt;</span>
-      <span class="to"></span>
+    <div id="list">
+      <div class="list-item _template">
+        <span class="from"></span>
+        <span>--&gt;</span>
+        <span class="to"></span>
+      </div>
     </div>
   </div>
   <div id="map"></div>
