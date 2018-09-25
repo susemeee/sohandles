@@ -192,6 +192,17 @@
     from.on('changeTime', onChangeTime);
     to.on('changeTime', onChangeTime);
 
+    /**
+     * api_key
+     */
+    if (window.localStorage) {
+      const keyEntry = $('input[name="api_key"]');
+      keyEntry.change(function() {
+        window.localStorage.__keyEntry = keyEntry.val();
+      });
+      keyEntry.val(window.localStorage.__keyEntry);
+    }
+
     return map;
   }
 
