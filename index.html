@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Socar Handles</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="controls">
+    <div class="controls-row">
+      <span>API Key</span>
+      <input type="text" name="api_key" value="">
+      <span>s: </span>
+      <img src="./start.svg" alt="start">
+      <span>e: </span>
+      <img src="./end.svg" alt="end">
+    </div>
+    <div class="controls-row">
+      <input type="text" name="time_from">
+      <span>~</span>
+      <input type="text" name="time_to">
+    </div>
+    <!-- <button id="query">Query</button> -->
+  </div>
+  <div id="list">
+    <div class="list-item _template">
+      <span class="from"></span>
+      <span>--&gt;</span>
+      <span class="to"></span>
+    </div>
+  </div>
+  <div id="map"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.js"></script>
+  <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=64f9b7b3dce25fc049d57f7619138529"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
